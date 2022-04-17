@@ -650,6 +650,10 @@ button {
     border-radius: 30px;
 }
 
+.fields {
+    padding: 10px 10px;
+}
+
 .footer-name {
     font-size: 1.125rem;
 }
@@ -676,12 +680,15 @@ button {
     width: 100%;
 }
 
-.footer__else {
+.footer-else textarea {
+    box-sizing: border-box;
+    width: 100%;
     padding: 10px 12px;
     font-size: 1.125rem;
     line-height: 1.6;
     padding-left: 30px;
     margin-bottom: 30px;
+    resize: vertical;
 }
 
 .footer-input-number {
@@ -741,22 +748,25 @@ button {
 @media(max-width: 520px) {
     .footer-form {
         text-align: center;
-        margin: 20px 0;
+        padding: 30px 10px;
     }
     .footer-choose {
         width: 70%;
         margin: 0 auto;
     }
     .footer-input__number {
-        width: 60%;
+        width: 70%;
     }
     .footer__name {
-        width: 60%;
+        width: 70%;
     }
     .footer__else {
-        width: 60%;
+        width: 70%;
     }
     .footer-info {
         padding: 19px;
+    }
+    .footer-else textarea {
+        width: 90%;
     }
 }
