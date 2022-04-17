@@ -60,7 +60,15 @@ new Swiper('.swiper_big-container', {
     thumbs: {
         swiper: {
             el: ".swiper-container",
-            slidesPerView: 3
+            slidesPerView: 3,
+            breakpoints: {
+                300: {
+                    slidesPerView: 1,
+                },
+                600: {
+                    slidesPerView: 3,
+                },
+            },
         }
 
     },

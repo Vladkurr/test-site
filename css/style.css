@@ -447,7 +447,7 @@ button {
 }
 
 
-/*===========================================VAR1===========================================*/
+/*===========================================TYPE===========================================*/
 
 .type {
     margin-top: 500px;
@@ -490,8 +490,8 @@ button {
 
 .slider_big__image {
     margin: 0 auto;
-    width: 500px;
-    height: 500px;
+    max-width: 500px;
+    max-height: 500px;
 }
 
 .slider_big__image img {
@@ -583,7 +583,38 @@ button {
 }
 
 
-/*===========================================VAR1-ADAPTIVE===========================================*/
+/*===========================================TYPE-ADAPTIVE===========================================*/
+
+@media(max-width:1120px) {
+    .type-row {
+        flex-direction: column;
+    }
+    .type-left {
+        margin: 0 auto;
+        max-width: 600px;
+        margin-bottom: 30px;
+    }
+    .type-right {
+        margin: 0 auto;
+        max-width: 600px;
+    }
+}
+
+@media(max-width:678px) {
+    .type-left {
+        margin: 0 auto;
+        max-width: 280px;
+        margin-bottom: 30px;
+    }
+    .type-right {
+        margin: 0 auto;
+        max-width: 280px;
+    }
+    .type__info {
+        letter-spacing: 0.2px;
+        line-height: 1px;
+    }
+}
 
 
 /*===========================================FOOTER===========================================*/
